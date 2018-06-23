@@ -97,10 +97,6 @@ datasets for other languages.
   - [Sentihood](#sentihood)
   - [SST](#sst)
   - [Yelp](#yelp)
-- [Multimodal Sentiment Analysis](#multimodal-sentiment-analysis)
-  - [MOSI](#mosi)
-- [Multimodal Emotion Recognition](#multimodal-emotion-recognition)
-  - [IEMOCAP](#iemocap)
 - [Semantic parsing](#semantic-parsing)
   - [WikiSQL](#wikisql)
 - [Semantic role labeling](#semantic-role-labeling)
@@ -133,6 +129,8 @@ Performance is only calculated on the 425 most frequent labels. Models are evalu
 
 | Model           | Accuracy |  Paper / Source |
 | ------------- | :-----:| --- |
+| Vaswani et al. (2016) | 94.24 | [Supertagging with LSTMs](https://aclweb.org/anthology/N/N16/N16-1027.pdf) |
+| Lewis et al. (2016) | 94.7 | [LSTM CCG Parsing](https://aclweb.org/anthology/N/N16/N16-1026.pdf) |
 | Low supervision (Søgaard and Goldberg, 2016) | 93.26 | [Deep multi-task learning with low level tasks supervised at lower layers](http://anthology.aclweb.org/P16-2038) |
 | Xu et al. (2015) | 93.00 | [CCG Supertagging with a Recurrent Neural Network](http://www.aclweb.org/anthology/P15-2041) |
 
@@ -504,6 +502,7 @@ different POS tags. Sections 0-18 are used for training, sections 19-21 for deve
 | Yang et al. (2017) | 97.55 | [Transfer Learning for Sequence Tagging with Hierarchical Recurrent Networks](https://arxiv.org/abs/1703.06345) |
 | Ma and Hovy (2016) | 97.55 | [End-to-end Sequence Labeling via Bi-directional LSTM-CNNs-CRF](https://arxiv.org/abs/1603.01354) |
 | Bi-LSTM (Ling et al., 2017) | 97.36 | [Finding Function in Form: Compositional Character Models for Open Vocabulary Word Representation](https://www.aclweb.org/anthology/D/D15/D15-1176.pdf) | | 
+| Feed Forward (Vaswani et a. 2016) | 97.4 | [Supertagging with LSTMs](https://aclweb.org/anthology/N/N16/N16-1027.pdf) |
 | Bi-LSTM (Plank et al., 2016) | 97.22 | [Multilingual Part-of-Speech Tagging with Bidirectional Long Short-Term Memory Models and Auxiliary Loss](https://arxiv.org/abs/1604.05529) | 
 
 ## Reading comprehension / Question answering
@@ -728,34 +727,6 @@ Binary classification:
 | DPCNN (Johnson and Zhang, 2017) | 2.64 | [Deep Pyramid Convolutional Neural Networks for Text Categorization](http://aclweb.org/anthology/P17-1052) |
 | CNN (Johnson and Zhang, 2016) | 2.90 | [Supervised and Semi-Supervised Text Categorization using LSTM for Region Embeddings](https://arxiv.org/abs/1602.02373) |
 | Char-level CNN (Zhang et al., 2015) | 4.88 | [Character-level Convolutional Networks for Text Classification](https://papers.nips.cc/paper/5782-character-level-convolutional-networks-for-text-classification.pdf) |
-
-## Multimodal Sentiment Analysis
-
-### MOSI
-The MOSI dataset ([Zadeh et al., 2016](https://arxiv.org/pdf/1606.06259.pdf)) is a dataset rich in sentimental expressions where 93 people review topics in English. The videos are segmented with each segments sentiment label scored between +3 (strong positive) to -3 (strong negative)  by  5  annotators.
-
-| Model           | Accuracy  |  Paper / Source |
-| ------------- | :-----:| --- |
-| bc-LSTM (Poria et al., 2018) | 80.3%  | [Context-Dependent Sentiment Analysis in User-Generated Videos](http://sentic.net/context-dependent-sentiment-analysis-in-user-generated-videos.pdf) |
-
-## Multimodal Emotion Recognition 
-
-### IEMOCAP
-The  IEMOCAP ( [Busso  et  al., 2008](https://link.springer.com/article/10.1007/s10579-008-9076-6)) contains the acts of 10 speakers in a two-way conversation segmented into utterances.  The medium of the conversations in all the videos is English.  The database contains the following categorical labels: anger, happiness, sadness, neutral, excitement,  frustration,  fear,  surprise,  and  other.
-
-**Monologue:**
-
-| Model           | Accuracy  |  Paper / Source |
-| ------------- | :-----:| --- |
-| bc-LSTM (Poria et al., 2018) | 76.10%  | [Context-Dependent Sentiment Analysis in User-Generated Videos](http://sentic.net/context-dependent-sentiment-analysis-in-user-generated-videos.pdf) |
-
-**Conversational:**
-
-| Model           | Score  |  Paper / Source |
-| ------------- | :-----:| --- |
-| CMN (Hazarika et al., 2018) | WAA = 77.62%  | [Conversational Memory Network for Emotion Recognition in Dyadic Dialogue Videos](http://aclweb.org/anthology/N18-1193) |
-
-
 
 ## Semantic parsing
 

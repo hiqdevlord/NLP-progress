@@ -50,8 +50,7 @@ datasets for other languages.
 
 ### Table of contents
 
-- [CCG supertagging](#ccg-supertagging)
-  - [CCGBank](#ccgbank)
+- [CCG supertagging](ccg_supertagging.md)
 - [Chunking](#chunking)
   - [Penn Treebank](#penn-treebank&mdash;chunking)
 - [Constituency parsing](#constituency-parsing)
@@ -111,30 +110,6 @@ datasets for other languages.
   - [AG News](#ag-news)
   - [DBpedia](#dbpedia)
   - [TREC](#trec)
-
-## CCG supertagging
-
-Combinatory Categorical Grammar (CCG; [Steedman, 2000](http://www.citeulike.org/group/14833/article/8971002)) is a
-highly lexicalized formalism. The standard parsing model of [Clark and Curran (2007)](https://www.mitpressjournals.org/doi/abs/10.1162/coli.2007.33.4.493)
-uses over 400 lexical categories (or _supertags_), compared to about 50 part-of-speech tags for typical parsers.
-
-Example:
-
-| Vinken | , | 61 | years | old |
-| --- | ---| --- | --- | --- |
-| N| , | N/N | N | (S[adj]\ NP)\ NP |
-
-### CCGBank
-
-The CCGBank is a corpus of CCG derivations and dependency structures extracted from the Penn Treebank by 
-[Hockenmaier and Steedman (2007)](http://www.aclweb.org/anthology/J07-3004). Sections 2-21 are used for training, 
-section 00 for development, and section 23 as in-domain test set.
-Performance is only calculated on the 425 most frequent labels. Models are evaluated based on accuracy.
-
-| Model           | Accuracy |  Paper / Source |
-| ------------- | :-----:| --- |
-| Low supervision (Søgaard and Goldberg, 2016) | 93.26 | [Deep multi-task learning with low level tasks supervised at lower layers](http://anthology.aclweb.org/P16-2038) |
-| Xu et al. (2015) | 93.00 | [CCG Supertagging with a Recurrent Neural Network](http://www.aclweb.org/anthology/P15-2041) |
 
 ## Chunking
 
@@ -503,6 +478,7 @@ different POS tags. Sections 0-18 are used for training, sections 19-21 for deve
 | Adversarial Bi-LSTM (Yasunaga et al., 2018) | 97.59 | [Robust Multilingual Part-of-Speech Tagging via Adversarial Training](https://arxiv.org/abs/1711.04903) | 
 | Yang et al. (2017) | 97.55 | [Transfer Learning for Sequence Tagging with Hierarchical Recurrent Networks](https://arxiv.org/abs/1703.06345) |
 | Ma and Hovy (2016) | 97.55 | [End-to-end Sequence Labeling via Bi-directional LSTM-CNNs-CRF](https://arxiv.org/abs/1603.01354) |
+| Feed Forward (Vaswani et a. 2016) | 97.4 | [Supertagging with LSTMs](https://aclweb.org/anthology/N/N16/N16-1027.pdf) |
 | Bi-LSTM (Ling et al., 2017) | 97.36 | [Finding Function in Form: Compositional Character Models for Open Vocabulary Word Representation](https://www.aclweb.org/anthology/D/D15/D15-1176.pdf) | | 
 | Bi-LSTM (Plank et al., 2016) | 97.22 | [Multilingual Part-of-Speech Tagging with Bidirectional Long Short-Term Memory Models and Auxiliary Loss](https://arxiv.org/abs/1604.05529) | 
 
@@ -824,6 +800,7 @@ were trained and evaluated on the anonymized version of the dataset.
 
 | Model           | ROUGE-1  | ROUGE-2  | ROUGE-L  |  Paper / Source |
 | ------------- | :-----:| :-----:| :-----:| --- |
+| DCA (Celikyilmaz et al., 2018) | 41.69| 19.47 | 37.92 | [Deep Communicating Agents for Abstractive Summarization](https://arxiv.org/abs/1803.10357) |
 | Pointer-generator + coverage (See et al., 2017) | 39.53| 17.28 | 36.38 | [Get To The Point: Summarization with Pointer-Generator Networks](https://arxiv.org/abs/1704.04368) |
 | Extractive model (Nallapati et al., 2017)* | ﻿39.6 | 16.2 | 35.3 | [SummaRuNNer: A Recurrent Neural Network based Sequence Model for Extractive Summarization of Documents](https://arxiv.org/abs/1611.04230) |
 | Abstractive model (Nallapti et al., 2016)* | 35.46 | 13.30 | 32.65 | [Abstractive Text Summarization using Sequence-to-sequence RNNs and Beyond](http://www.aclweb.org/anthology/K16-1028) |

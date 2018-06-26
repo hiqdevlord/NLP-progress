@@ -40,12 +40,13 @@ These are tasks and datasets that are still missing.
 
 - Bilingual dictionary induction
 - Discourse parsing
+- Entity Linking
 - Information extraction
+- Keyphrase extraction
 - Knowledge base population (KBP)
 - More dialogue tasks
 - Relation extraction
 - Semi-supervised learning
-- Entity Linking
 
 ### Contributing
 

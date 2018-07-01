@@ -48,6 +48,7 @@ These are tasks and datasets that are still missing.
 - Relation extraction
 - Semi-supervised learning
 - Grammatical error correction
+- Word sense disambiguation
 
 ### Contributing
 
@@ -56,7 +57,7 @@ In order to minimize noise and to make maintenance somewhat manageable, results 
 in published papers will be preferred (indicate the venue of publication in your PR);
 an exception may be made for influential preprints. The result should include the name
 of the method, the citation, the score, and a link to the paper and should be added
-so that the table is sorted.
+so that the table is sorted (with the best result on top).
 
 In order to make reproduction easier, we recommend to add a link to an implementation 
 to each method if available. You can add a `Code` column (see below) to the table if it does not exist.
@@ -75,7 +76,7 @@ the one that introduced the dataset.
 
 1. Fork the repository.
 2. If your task is completely new, create a new file and link to it in the table of contents above.
-If not, add your task or dataset to the respective section of the corresponding file.
+If not, add your task or dataset to the respective section of the corresponding file (in alphabetical order).
 3. Briefly describe the dataset/task and include relevant references. 
 4. Describe the evaluation setting and evaluation metric.
 5. Show how an annotated example of the dataset/task looks like.
@@ -96,6 +97,7 @@ If not, add your task or dataset to the respective section of the corresponding 
 - Add an example to every task/dataset.
 - Add statistics to every dataset.
 - Provide a description and details for every task / dataset.
+- Add a table of contents to every file (particularly the large ones).
 - We could potentially use [readthedocs](https://github.com/rtfd/readthedocs.org) to provide a clearer structure.
 - All current datasets in this list are for the English language (except for [UD](#ud)). In a separate section, we could add
 datasets for other languages.

@@ -56,7 +56,6 @@ These are tasks and datasets that are still missing.
 - More dialogue tasks
 - Relation extraction
 - Semi-supervised learning
-- Text normalization
 
 ### Contributing
 

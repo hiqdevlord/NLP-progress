@@ -13,7 +13,7 @@
 - [Entity Linking](entity_linking.md)
 - [Grammatical Error Correction](grammatical_error_correction.md)
 - [Information Extraction](information_extraction.md)
-- [Language modeling](language_modeling.md)
+- [Language modelling](language_modeling.md)
 - [Machine translation](machine_translation.md)
 - [Multi-task learning](multi-task_learning.md)
 - [Multimodal](multimodal.md)
@@ -21,6 +21,7 @@
 - [Natural language inference](natural_language_inference.md)
 - [Part-of-speech tagging](part-of-speech_tagging.md)
 - [Question answering](question_answering.md)
+- [Relationship extraction](relationship_extraction.md)
 - [Semantic textual similarity](semantic_textual_similarity.md)
 - [Sentiment analysis](sentiment_analysis.md)
 - [Semantic parsing](semantic_parsing.md)
@@ -56,7 +57,6 @@ These are tasks and datasets that are still missing.
 - More dialogue tasks
 - Relation extraction
 - Semi-supervised learning
-- Text normalization
 
 ### Contributing
 

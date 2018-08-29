@@ -21,7 +21,6 @@
 - [Natural language inference](natural_language_inference.md)
 - [Part-of-speech tagging](part-of-speech_tagging.md)
 - [Question answering](question_answering.md)
-- [Relationship extraction](relationship_extraction.md)
 - [Semantic textual similarity](semantic_textual_similarity.md)
 - [Sentiment analysis](sentiment_analysis.md)
 - [Semantic parsing](semantic_parsing.md)
@@ -57,6 +56,7 @@ These are tasks and datasets that are still missing.
 - More dialogue tasks
 - Relation extraction
 - Semi-supervised learning
+- Text normalization
 
 ### Contributing
 

@@ -13,7 +13,7 @@
 - [Entity Linking](entity_linking.md)
 - [Grammatical Error Correction](grammatical_error_correction.md)
 - [Information Extraction](information_extraction.md)
-- [Language modelling](language_modeling.md)
+- [Language modeling](language_modeling.md)
 - [Machine translation](machine_translation.md)
 - [Multi-task learning](multi-task_learning.md)
 - [Multimodal](multimodal.md)
@@ -57,6 +57,7 @@ These are tasks and datasets that are still missing.
 - More dialogue tasks
 - Relation extraction
 - Semi-supervised learning
+- Text normalization
 
 ### Contributing
 
@@ -100,6 +101,25 @@ If not, add your task or dataset to the respective section of the corresponding 
 | Model           | Score  |  Paper / Source | Code | 
 | ------------- | :-----:| --- | --- | 
 |  |  |  | | 
+
+**Important note:** We are currently transitioning from storing results in tables (as above) to using
+[YAML](https://en.wikipedia.org/wiki/YAML) files for their greater flexibility. This will allow us to 
+highlight additional attributes and have interesting visualizations of results down the line.
+
+If the results for your task are already stored in a YAML file, you can simply extend the YAML file
+using the same fields as the existing entries. To check that the resulting table looks as expected,
+you can build the site locally using Jekyll by following the steps detailed
+[here](https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/#requirements):
+
+1. Check whether you have Ruby 2.1.0 or higher installed with `ruby --version`, otherwise [install it](https://www.ruby-lang.org/en/downloads/).
+On OS X for instance, this can be done with `brew install ruby`.
+2. Install Bundler `gem install bundler`. If you run into issues with installing bundler on OS X, have a look
+[here](https://bundler.io/v1.16/guides/rubygems_tls_ssl_troubleshooting_guide.html) for troubleshooting tips. Also try refreshing
+the terminal.
+3. Install Jekyll: `bundle install`
+4. Clone the repo locally: `git clone https://github.com/sebastianruder/NLP-progress`
+5. Navigate to the repo with `cd NLP-progress` and run the Jekyll site locally: `bundle exec jekyll serve`
+6. You can now preview the local Jekyll site in your browser at `http://localhost:4000`.
 
 ### Things to do
 

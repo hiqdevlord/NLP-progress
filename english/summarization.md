@@ -52,6 +52,7 @@ The first table covers Extractive Models, while the second covers abstractive ap
 | --------------- | :-----: | :-----: | :-----: | :----: | -------------- | ---- |
 | BertSumExt (Liu and Lapata 2019) | 43.85 | 20.34 | 39.90 | - | [Text Summarization with Pretrained Encoders](https://arxiv.org/abs/1908.08345) |[Official](https://github.com/nlpyang/PreSumm) | 
 | BERT-ext + RL (Bae et al., 2019) | 42.76 | 19.87 | 39.11 | - | [Summary Level Training of Sentence Rewriting for Abstractive Summarization](https://arxiv.org/abs/1909.08752) | |
+| PNBERT (Zhong et al., 2019) | 42.69 | 19.60 | 38.85 | - | [Searching for Effective Neural Extractive Summarization: What Works and What's Next](https://arxiv.org/abs/1907.03491) | [Official](https://github.com/maszhongming/Effective_Extractive_Summarization) |
 | HIBERT (Zhang et al., 2019) | 42.37 | 19.95 | 38.83 | - | [HIBERT: Document Level Pre-training of Hierarchical Bidirectional Transformers for Document Summarization](https://arxiv.org/abs/1905.06566) | |
 | NeuSUM (Zhou et al., 2018) | 41.59 | 19.01 | 37.98 | - | [Neural Document Summarization by Jointly Learning to Score and Select Sentences](http://aclweb.org/anthology/P18-1061) | [Official](https://github.com/magic282/NeuSum) |
 | Latent (Zhang et al., 2018) | 41.05 | 18.77 | 37.54 | - | [Neural Latent Extractive Document Summarization](http://aclweb.org/anthology/D18-1088) | | 
@@ -63,7 +64,8 @@ The first table covers Extractive Models, while the second covers abstractive ap
 
 | Model           | ROUGE-1 | ROUGE-2 | ROUGE-L | METEOR | Paper / Source | Code |
 | --------------- | :-----: | :-----: | :-----: | :----: | -------------- | ---- |
-| HierNSE factoring (Results are on factored data) | 45.58 | 26.81 | 41.17 | - | [Read, Highlight and Summarize: A Hierarchical Neural Semantic Encoder-based Approach](https://arxiv.org/pdf/1910.03177.pdf) | [Official](https://github.com/rajeev595/RHS_HierNSE) |
+| BART (Lewis et al., 2019) | 44.16 | 21.28 | 40.90 | - | [BART: Denoising Sequence-to-Sequence Pre-training for Natural Language Generation, Translation, and Comprehension](https://arxiv.org/pdf/1910.13461.pdf) | [Official](https://github.com/pytorch/fairseq/tree/master/examples/bart) |
+| UniLM (Dong et al., 2019) | 43.33 | 20.21 | 40.51 | - | [Unified Language Model Pre-training for Natural Language Understanding and Generation](https://arxiv.org/pdf/1905.03197.pdf) | [Official](https://github.com/microsoft/unilm) |
 | CNN-2sent-hieco-RBM (Zhang et al., 2019) | 42.04 | 19.77 | 39.42 | - |[Abstract Text Summarization with a Convolutional Seq2Seq Model](https://www.mdpi.com/2076-3417/9/8/1665/pdf) | |
 | BertSumExtAbs (Liu and Lapata 2019) | 42.13 | 19.60 | 39.18 | - | [Text Summarization with Pretrained Encoders](https://arxiv.org/abs/1908.08345) |[Official](https://github.com/nlpyang/PreSumm) |
 | BERT-ext + abs + RL + rerank (Bae et al., 2019) | 41.90 | 19.08 | 39.64 | - | [Summary Level Training of Sentence Rewriting for Abstractive Summarization](https://arxiv.org/abs/1909.08752) | |
@@ -81,9 +83,6 @@ The first table covers Extractive Models, while the second covers abstractive ap
 | Pointer + Coverage + EntailmentGen + QuestionGen (Guo et al., 2018) | 39.81 | 17.64 | 36.54 | 18.54 | [Soft Layer-Specific Multi-Task Summarization with Entailment and Question Generation](http://aclweb.org/anthology/P18-1064) | |
 | ML+RL ROUGE+Novel, with LM (Kryscinski et al., 2018) | 40.19 | 17.38 | 37.52 | - | [Improving Abstraction in Text Summarization](http://aclweb.org/anthology/D18-1207) | |
 | Pointer-generator + coverage (See et al., 2017) | 39.53 | 17.28 | 36.38 | 18.72 | [Get To The Point: Summarization with Pointer-Generator Networks](http://aclweb.org/anthology/P17-1099) | [Official](https://github.com/abisee/pointer-generator) |
-| Hier-NSE Self-Critical | 39.42 | 16.46 | 36.93 | - | [Read, Highlight and Summarize: A Hierarchical Neural Semantic Encoder-based Approach](https://arxiv.org/pdf/1910.03177.pdf) | [Official](https://github.com/rajeev595/RHS_HierNSE) |
-
-
 
 ### Gigaword
 
@@ -92,6 +91,8 @@ The Gigaword summarization dataset has been first used by [Rush et al., 2015](ht
 | Model           | ROUGE-1 | ROUGE-2 | ROUGE-L | Paper / Source | Code |
 | --------------- | :-----: | :-----: | :-----: | -------------- | ---- |
 | BiSET (Wang et al., 2019) | 39.11 | 19.78 | 36.87 | [BiSET: Bi-directional Selective Encoding with Template for Abstractive Summarization](https://www.aclweb.org/anthology/P19-1207) | [Official](https://github.com/InitialBug/BiSET) |
+| UniLM (Dong et al., 2019) | 38.90 | 20.05 | 36.00 | - | [Unified Language Model Pre-training for
+Natural Language Understanding and Generation](https://arxiv.org/pdf/1905.03197.pdf) | [Official](https://github.com/microsoft/unilm) |
 | MASS (Song et al., 2019) | 38.73 | 19.71 | 35.96 | [MASS: Masked Sequence to Sequence Pre-training for Language Generation](https://arxiv.org/pdf/1905.02450v5.pdf) | [Official](https://github.com/microsoft/MASS) |
 | CNN-2sent-hieco-RBM (Zhang et al., 2019) | 37.95 | 18.64 | 35.11 | [Abstract Text Summarization with a Convolutional Seq2Seq Model](https://www.mdpi.com/2076-3417/9/8/1665/pdf) | | |
 | Re^3 Sum (Cao et al., 2018) | 37.04 | 19.03 | 34.46 | [Retrieve, Rerank and Rewrite: Soft Template Based Neural Summarization](http://aclweb.org/anthology/P18-1015) | |
@@ -111,6 +112,26 @@ The Gigaword summarization dataset has been first used by [Rush et al., 2015](ht
 | ABS (Rush et al., 2015) | 29.55 | 11.32 | 26.42 | [A Neural Attention Model for Sentence Summarization](https://www.aclweb.org/anthology/D/D15/D15-1044.pdf) * | |
 
 (*) [Rush et al., 2015](https://www.aclweb.org/anthology/D/D15/D15-1044.pdf)  report ROUGE recall, the table here contains ROUGE F1-scores for Rush's model reported by [Chopra et al., 2016](http://www.aclweb.org/anthology/N16-1012)
+
+### X-Sum
+
+X-Sum (standing for _Extreme Summarization_), introduced by [Narayan et al., 2018](https://arxiv.org/pdf/1808.08745.pdf), is a summarization dataset which does not favor extractive strategies and calls for an abstractive modeling approach.  
+The idea of this dataset is to create a short, one sentence news summary.  
+Data is collected by harvesting online articles from the BBC.  
+The dataset contain **204 045** samples for the training set, **11 332** for the validation set, and **11 334** for the test set. In average the length of article is 431 words (~20 sentences) and the length of summary is 23 words. It can be downloaded [here](https://github.com/EdinburghNLP/XSum).  
+Evaluation metrics are ROUGE-1, ROUGE-2 and ROUGE-L.
+
+| Model           | ROUGE-1 | ROUGE-2 | ROUGE-L | Paper / Source | Code |
+| --------------- | :-----: | :-----: | :-----: | -------------- | ---- |
+| BART (Lewis et al., 2019) | 45.14 | 22.27 | 37.25 | [BART: Denoising Sequence-to-Sequence Pre-training for Natural Language Generation, Translation, and Comprehension](https://arxiv.org/pdf/1910.13461.pdf) | [Official](https://github.com/pytorch/fairseq/tree/master/examples/bart) |
+| BertSumExtAbs (Liu et al., 2019) | 38.81 | 16.50 | 31.27 | [Text Summarization with Pretrained Encoders](https://arxiv.org/pdf/1908.08345.pdf) | [Official](https://github.com/nlpyang/PreSumm) |
+| T-ConvS2S | 31.89 | 11.54 | 25.75 | [Don’t Give Me the Details, Just the Summary!](https://arxiv.org/pdf/1808.08745.pdf) | [Official](https://github.com/EdinburghNLP/XSum) |
+| PtGen | 29.70 | 9.21 | 23.24 | [Don’t Give Me the Details, Just the Summary!](https://arxiv.org/pdf/1808.08745.pdf) | [Official](https://github.com/EdinburghNLP/XSum) |
+| Seq2Seq | 28.42 | 8.77 | 22.48 | [Don’t Give Me the Details, Just the Summary!](https://arxiv.org/pdf/1808.08745.pdf) | [Official](https://github.com/EdinburghNLP/XSum) |
+| PtGen-Covg | 28.10 | 8.02 | 21.72 | [Don’t Give Me the Details, Just the Summary!](https://arxiv.org/pdf/1808.08745.pdf) | [Official](https://github.com/EdinburghNLP/XSum) |
+| Baseline : Extractive Oracle | 29.79 | 8.81 | 22.66 | [Don’t Give Me the Details, Just the Summary!](https://arxiv.org/pdf/1808.08745.pdf) | [Official](https://github.com/EdinburghNLP/XSum) |
+| Baseline : Lead-3 | 16.30 | 1.60 | 11.95 | [Don’t Give Me the Details, Just the Summary!](https://arxiv.org/pdf/1808.08745.pdf) | [Official](https://github.com/EdinburghNLP/XSum) |
+| Baseline : Random | 15.16 | 1.78 | 11.27 | [Don’t Give Me the Details, Just the Summary!](https://arxiv.org/pdf/1808.08745.pdf) | [Official](https://github.com/EdinburghNLP/XSum) |
 
 ### DUC 2004 Task 1
 
